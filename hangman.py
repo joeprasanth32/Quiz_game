@@ -24,7 +24,7 @@ class HangmanGame(tk.Tk):
         self.questions = {
             "Who is the Prime Minister of India? ": ["modi", "narendra modi",'narendra'],
             "What is the capital of France? ": ["paris"],
-            # Add more questions here
+            
         }
 
         self.current_question_index = 0
@@ -82,7 +82,7 @@ class HangmanGame(tk.Tk):
         messagebox.showinfo("Game Over", f"Thank you for playing! You answered {self.correct_answers} out of {len(self.questions)} questions correctly.")
         self.destroy()
 
-# Create an instance of the HangmanGame class and run the Tkinter event loop
+
 hangman_game = HangmanGame()
 hangman_game.mainloop()
 
